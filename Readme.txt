@@ -78,4 +78,42 @@ _____________________________________________________
 
 Dado el conjunto de datos \{x1,x2,...,xn\} se generan los datos normalizados
 \{z1,z2,...,zn\} donde zi=(xi-\mu)/\sigma
+_____________________________________________________
+
+				Matriz de confusion
+_____________________________________________________
+Esta matriz sirve para estimar el error que existe
+en los modelos logisticos donde
+
+________________________________________________
+|		     |  Actually		| Actually		|
+|			 |  Positive(1)		| Negative(0)	|
+|____________|__________________|_______________|
+|Predicted   |	True Positive	| 	False		|
+|positive(1) |		(TP)		|	Positive	|
+|____________|__________________|_____(FP)______|
+|Predicted   |	False Negative	| 	True		|
+|Negative(0) |		(FN)		|	Negative	|
+|____________|__________________|____(TN)_______|
+
+
+ACCURACY=(TP+FN)/(TP+FN+FP+TN)
+_________________________________________________________________
+
+¿Como etiquetar una nueva columna?
+__________________________________________________________________
+datos: solo los atributos de los objetos
+
+data.nombre: es un array con los nombres de las columnas
+
+# Creamos el DataFrame con los feature names.
+data = pd.DataFrame(data=datos, columns=data.nombres)
+
+# Creamos el DataFrame con los targets (las especies de la flor).
+target = pd.DataFrame(data=datosnuevos, columns=['nombre_dato_new'])
+
+# Unimos ambos DF con concat; agregamos una nueva columna.
+data = pd.concat([data, target], axis=1)
+________________________________________________
+
 
