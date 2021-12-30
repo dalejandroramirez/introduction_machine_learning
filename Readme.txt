@@ -86,14 +86,14 @@ Esta matriz sirve para estimar el error que existe
 en los modelos logisticos donde
 
 ________________________________________________
-|		     |  Actually		| Actually		|
-|			 |  Positive(1)		| Negative(0)	|
+|	     |  Actually	| Actually	|
+|	     |  Positive(1)	| Negative(0)	|
 |____________|__________________|_______________|
-|Predicted   |	True Positive	| 	False		|
-|positive(1) |		(TP)		|	Positive	|
+|Predicted   |	True Positive	| False		|
+|positive(1) |	   (TP)		|Positive	|
 |____________|__________________|_____(FP)______|
-|Predicted   |	False Negative	| 	True		|
-|Negative(0) |		(FN)		|	Negative	|
+|Predicted   |	False Negative	|   True	|
+|Negative(0) |		(FN)	|    Negative	|
 |____________|__________________|____(TN)_______|
 
 
