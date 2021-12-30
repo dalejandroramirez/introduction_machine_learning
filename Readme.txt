@@ -114,6 +114,45 @@ target = pd.DataFrame(data=datosnuevos, columns=['nombre_dato_new'])
 
 # Unimos ambos DF con concat; agregamos una nueva columna.
 data = pd.concat([data, target], axis=1)
-________________________________________________
+____________________________________________________________________
+
+				Redes neuronales
+____________________________________________________________________
+- Deep Feed-forward (DNNs)
+	.Estas  usan funciones de activacion que son perfectas para solucionar
+	problemas no lineales
+
+	. evaluar las funciones en cada nodo
+
+
+
+- Comvolutional (CNNs)
+	.operador comvolucional pool o kernel
+	. Usado en imagenes y genómicos
+	
+- Recurrente (RNNs)
+	.Neuronas que tienen larga memoria, por ejemplo informacion de lenguaje
+
+_________________________________________________________________
+
+Deed feed-forward
+
+va calculando una por una las funciones de los nodos  
+para posteriormente pensar en la funcion de perdida
+que si es regresion es con media cuadratica
+y si es clsificacion con el clossentropy
+
+_________________________________________________________________
+
+Backpropagation
+_________________________________________________________________
+Una vez que se haya escogido la 
+Esta es la regla de actualizacion usado para ajustar los pesos en las Redes
+
+Este inicia desde la salida hasta los datos de entrada
+
+actualizadno los datos tomando la derivada parcial de ellos con respecto a cada nodo.
+
+empezando desde la salida hacia atras hasta la entrada
 
 
